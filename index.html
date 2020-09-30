@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym | landing Page Design</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header part -->
+    <header>        
+            <nav>
+                <div class="logo">
+                    <a href="#">Gym</a>
+                </div>
+                <div class="toggle" onclick="toggleMenu();">              
+                </div>
+            </nav>
+        <div class="video">
+            <video src="img/gym.mp4" muted autoplay loop></video>
+        </div>
+        
+        <div class="overlay"></div>
+        <div class="banner-cont">
+            <h4>Be Strong</h4>
+            <h2>Refresh Your Mind</h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. A distinctio, est suscipit dolores minima magni eveniet iusto eum quos consequuntur mollitia qui molestiae fuga earum modi nemo repellat atque perferendis.</p>
+            <a href="#"> Join Us</a>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="#"><img src="img/facebook.png" alt="fb"></a></li>
+                <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="img/instagram.png" alt="insta"></a></li>
+            </ul>
+        </div>
+            
+        </div>
+    </header>
+    <div class="navigation">
+        <ul>
+            <li><a href="#" onclick="toggleMenu();"> Home</a></li>
+            <li><a href="#" onclick="toggleMenu();"> About</a></li>
+            <li><a href="#" onclick="toggleMenu();"> Training</a></li>
+            <li><a href="#" onclick="toggleMenu();"> Workout</a></li>
+            <li><a href="#" onclick="toggleMenu();"> Contact</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        function toggleMenu(){            
+        const toggle = document.querySelector('.toggle');
+        const header = document.querySelector('header');
+        toggle.classList.toggle('active');
+        header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
